@@ -1,0 +1,303 @@
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    body {
+        background: #3f0007;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1d0101;
+    }
+    
+    .bold {
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    .semi-bold {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .resume {
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin: 50px auto;
+    }
+    
+    .resume .resume_left {
+        width: 280px;
+        background-image: linear-gradient(#460307, rgba(19, 0, 0));
+    }
+    
+    .resume .resume_left .resume_profile {
+        width: 100%;
+        height: 280px;
+    }
+    
+    .resume .resume_left .resume_profile img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .resume .resume_left .resume_content {
+        padding: 0 25px;
+    }
+    
+    .resume .title {
+        margin-bottom: 20px;
+    }
+    
+    
+    .resume .resume_left .resume_item {
+        padding: 25px 0;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .resume .resume_right .resume_item {
+        padding: 25px 0;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+    
+
+    .resume .title .bold {
+        color: #50f5a8;
+    }
+
+    .resume .resume_left .resume_item:last-child,
+    .resume .resume_right .resume_item:last-child {
+        border-bottom: 0px;
+    }
+    
+    .resume .resume_left ul li {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+    .resume .resume_left ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .resume .resume_left ul li .icon {
+        width: 35px;
+        height: 35px;
+        background: rgb(0, 0, 0);
+        color: #ffffff;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 16px;
+        position: relative;
+    }
+    
+    .resume .icon i,
+    .resume .resume_right .resume_majorprojects ul li i,
+    .resume .resume_right .resume_achievements ul li i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .resume .resume_left ul li .data {
+        color: #000;
+    }
+    
+    .resume .resume_left .resume_languages .regular {
+        color: rgb(0, 0, 0);
+    }
+    
+    .resume .resume_left .resume_languages ul li,
+    .resume .resume_left .resume_skills ul li {
+        display: flex;
+        margin-bottom: 10px;
+        color: #fff;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .resume .resume_left .resume_skills ul li .skill_name {
+        width: 25%;
+    }
+    
+    .resume .resume_left .resume_social .semi-bold {
+        color: #fff;
+        margin-bottom: 3px;
+    }
+    
+    .resume .resume_left .resume_content .title p {
+        color: #fff;
+    }
+
+    .resume .resume_left .resume_content ul table tbody tr td {
+        color: #fff;
+    }
+
+    .resume .resume_left .resume_item .data p {
+        color: #fff;
+    }
+
+    .resume .resume_left .resume_item .data a {
+        color:#50f5a8;
+    }
+  
+
+    .resume .resume_right {
+        width: 520px;
+        background-image: url(images/Checker.png);
+        background: rgba(211, 18, 44, 1);
+        padding: 25px;
+    }
+    
+    .resume .resume_right .bold {
+        color: #50f5a8;
+    }
+    
+    .resume .resume_right .resume_work ul,
+    .resume .resume_right .resume_achievements ul,
+    .resume .resume_right .resume_majorprojects ul,
+    .resume .resume_right .resume_education ul {
+        padding-left: 40px;
+        overflow: hidden;
+    }
+    
+    .resume .resume_right ul li {
+        position: relative;
+    }
+    
+    .resume .resume_right ul li .date {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .resume .resume_right ul li .info {
+        margin-bottom: 20px;
+    }
+    
+    .resume .resume_right ul li:last-child .info {
+        margin-bottom: 0;
+    }
+    
+    .resume .resume_right .resume_work ul li:before,
+    .resume .resume_right .resume_education ul li:before,
+    .resume .resume_right .resume_majorprojects ul li::before,
+    .resume .resume_right .resume_achievements ul li:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+    }
+    
+    .resume .resume_right .resume_work ul li:after,
+    .resume .resume_right .resume_achievements ul li:after,
+    .resume .resume_right .resume_majorprojects ul li:after,
+    .resume .resume_right .resume_education ul li:after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -21px;
+        width: 2px;
+        height: 110%;
+        background: #ffffff;
+    }
+    
+    .date {
+        color: white;
+    }
+    
+    .resume_right p {
+        color: #000
+    }
+    
+    .resume .resume_right .resume_education .semi-bold,
+    .resume .resume_right .resume_achievements .semi-bold,
+    .resume .resume_right .resume_majorprojects .semi-bold,
+    .resume .resume_right .resume_work .semi-bold {
+        color:#50f5a8;
+        font-weight: 700;
+    }
+    
+    .resume .resume_left .resume_skills td {
+        padding: 3.5px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .resume .resume_left .resume_languages td {
+        padding: 3.5px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .resume_right .resume_item p {
+        text-align: justify;
+        color: #fff;
+    }
+    
+    .resume .resume_right :any-link {
+        color: #50f5a8;
+    }
+        
+    .resume_left {
+        color: #fff
+    }
+
+    .nameText{
+        color: #50f5a8;
+    }
+
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #3b0000 50%, rgb(0, 0, 0) 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+    
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+    
+    .bg3 {
+        animation-duration: 5s;
+    }
+    
+    .content {
+        border-radius: .25em;
+        box-shadow: 0 0 .25em rgba(255, 255, 255, 0);
+        box-sizing: border-box;
+        left: 50%;
+        padding: 10vmin;
+        position: fixed;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    h1 {
+        font-family: monospace;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(25%);
+        }
+    }
