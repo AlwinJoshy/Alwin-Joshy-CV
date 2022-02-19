@@ -144,6 +144,10 @@
         color: #fff;
     }
 
+    .resume .resume_left .resume_item .data .semi-bold {
+        color: #50f5a8;
+    }
+
     .resume .resume_left .resume_item .data a {
         color:#50f5a8;
     }
